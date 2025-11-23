@@ -1,0 +1,45 @@
+﻿C provides three primary types of loops:
+
+🔹 1. for Loop
+🔸The for loop is used when the number of     iterations is known in advance.
+🔸It combines initialization, condition checking, and increment/decrement in one line.
+⚫Syntax:
+
+for (initialization; condition; increment/decrement) {
+    // code to be executed repeatedly
+}
+
+🔸Use Case:
+Printing a sequence of numbers
+Iterating over arrays
+Repeated fixed-count tasks
+
+
+🔹 2. while Loop
+🔸The while loop is used when the number of iterations is not known beforehand and depends on a condition.
+🔸The condition is evaluated before each iteration.
+
+⚫Syntax:
+      
+while (condition) {
+    // repeated code block
+}
+
+🔸Use Case:
+Processing digits of a number
+Waiting for a condition to change
+Reading input until a stop value is found
+
+
+🔹 3. do-while Loop
+🔸The do-while loop ensures the block of code is executed at least once, because the condition is checked after the loop body.
+⚫Syntax:
+     
+do {
+    // code block executed at least once
+} while (condition);
+
+🔸Use Case:
+Menus and user-driven programs
+Multiplication tables
+Input validation loops
