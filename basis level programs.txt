@@ -1,0 +1,97 @@
+﻿//print big number in given two numbers
+#include <stdio.h>
+int main() {
+    int a, b;
+
+    printf("Enter two numbers: ");
+    scanf("%d%d", &a,&b);
+
+    if (a > b) {
+        printf("%d is the biggest number.\n", a);
+    } else if (b > a) {
+        printf("%d is the biggest number.\n", b);
+    } else {
+        printf("Both numbers are equal.\n");
+    }
+
+    return 0;
+}
+
+//Divisible by 5 in arrays
+#include <stdio.h>
+
+int main() {
+    int n, i;
+
+    printf("Enter the number of elements: ");
+    scanf("%d", &n);
+
+    int arr[n];
+
+    printf("Enter %d elements:\n", n);
+    for (i = 0; i < n; i++) {
+        scanf("%d", &arr[i]);
+    }
+
+    printf("Numbers divisible by 5 are:\n");
+    for (i = 0; i < n; i++) {
+        if (arr[i] % 5 == 0) {
+            printf("%d ", arr[i]);
+        }
+    }
+//Find maximum element in array
+#include <stdio.h>
+
+int main() {
+    int n, i;
+    
+    printf("Enter the number of elements: ");
+    scanf("%d", &n);
+
+    int arr[n];
+
+    printf("Enter %d elements:\n", n);
+    for (i = 0; i < n; i++) {
+        scanf("%d", &arr[i]);
+    }
+
+    int max = arr[0];  // assume first element is max
+
+    for (i = 1; i < n; i++) {
+        if (arr[i] > max) {
+            max = arr[i];
+        }
+    }
+
+    printf("Maximum number = %d\n", max);
+
+    return 0;
+}
+//Find minimum element in array
+#include <stdio.h>
+
+int main() {
+    int n, i;
+
+    printf("Enter the number of elements: ");
+    scanf("%d", &n);
+
+    int arr[n];
+
+    printf("Enter %d elements:\n", n);
+    for (i = 0; i < n; i++) {
+        scanf("%d", &arr[i]);
+    }
+
+    int min = arr[0]; // assume first element is minimum
+
+    for (i = 1; i < n; i++) {
+        if (arr[i] < min) {
+            min = arr[i];
+        }
+    }
+
+    printf("Minimum number = %d\n", min);
+
+    return 0;
+}
