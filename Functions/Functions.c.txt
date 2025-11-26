@@ -1,0 +1,77 @@
+﻿⭐ Functions in C — Full Explanation
+A function in C is a block of code written to perform a specific task.
+Just like formulas in math, functions make programs:
+Easy to read
+Easy to debug
+Easy to reuse
+📌 Types of Functions
+1. Library Functions
+Already provided by C language
+Examples:
+printf()
+scanf()
+sqrt()
+strlen()
+We can directly use them.
+2. User-Defined Functions
+Functions created by the programmer.
+Example:
+void greet() {
+    printf("Hello!");
+}
+🔹 Basic Structure of a Function in C
+A function has 3 main parts:
+1️⃣ Function Declaration (Prototype)
+2️⃣ Function Definition
+3️⃣ Function Call
+📘 1. Function Declaration (Prototype)
+Tells the compiler the name, return type, and parameters.
+Example:
+int add(int a, int b);
+📘 2. Function Definition
+Actual code of the function.
+int add(int a, int b) {
+    return a + b;
+}
+📘 3. Function Call
+Where you use the function.
+int result = add(5, 3);
+⭐ Example Program Using Functions
+#include <stdio.h>
+
+int add(int a, int b);  // Function declaration
+
+int main() {
+    int x = 10, y = 20;
+    int sum = add(x, y);  // Function call
+    printf("Sum = %d", sum);
+    return 0;
+}
+
+// Function definition
+int add(int a, int b) {
+    return a + b;
+}
+🎯 Why Do We Use Functions?
+✔ Avoid repeating code
+✔ Increase readability
+✔ Divide large programs into smaller parts (modularity)
+✔ Easy to test and debug
+✔ Useful for teamwork programming
+🔸 Types of User-Defined Functions Based on Parameters & Return Type
+1. No arguments, no return value
+void display() {
+    printf("Hello");
+}
+2. Arguments, no return value
+void greet(char name[]) {
+    printf("Hello %s", name);
+}
+3. No arguments, return value
+int getNumber() {
+    return 10;
+}
+4. Arguments with return value
+int max(int a, int b) {
+    return (a > b) ? a : b;
+}
