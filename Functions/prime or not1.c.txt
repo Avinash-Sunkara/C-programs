@@ -1,0 +1,23 @@
+﻿#include <stdio.h>
+void main() {
+    void isprime(int n);
+    int n;
+    printf("Enter the value of n: ");
+    scanf("%d", &n);
+
+    isprime(n);
+}
+
+void isprime(int n) {
+    int count = 0;
+    for(int i = 1; i <= n; i++) {
+        if(n % i == 0) {
+            count++;
+        }
+    }
+
+    if(count == 2)
+        printf("\nGiven number is Prime");
+    else
+        printf("\nGiven number is not Prime");
+}
