@@ -1,43 +1,44 @@
-# C Programs: Beginner to Advanced
+# C Interview Programs: Basic to Advanced
 
-A practical collection of C examples and exercises, organized by topic and difficulty. Programs use straightforward syntax, meaningful names, and comments where they clarify the steps.
+A topic-based practice repository for learning C and preparing for programming interviews and coding rounds. It includes clear standalone solutions, problem statements, examples, and complexity notes. These are common practice patterns; the repository does not claim that a specific company asked a specific question.
 
-## Repository layout
+## Problem map
 
-| Folder | What it contains |
-| --- | --- |
-| [`problems/`](problems/) | Self-contained exercises, each with its own statement, examples, and solution. |
-| [`problems/loops/count-1-to-n/`](problems/loops/count-1-to-n/) | First exercise: print every integer from 1 through a user-provided limit. |
-| [`Functions/`](Functions/) | Existing function examples and notes. Some are original `.txt` study files. |
-| Root `.txt` files | Original notes and practice snippets retained from the starter repository. |
+| Level | Topic | Practice areas |
+| --- | --- | --- |
+| Beginner | [Basics](problems/basics/) | Number properties, arithmetic, and simple loops |
+| Beginner | [Arrays](problems/arrays/) | Traversal, searching, and sorting |
+| Beginner–Intermediate | [Strings](problems/strings/) | Reversal, palindrome checks, and character processing |
+| Intermediate | [Recursion](problems/recursion/) | Base cases and recursive problem solving |
+| Intermediate | [Pointers](problems/pointers/) | Addresses, references, and swapping values |
+| Intermediate | [Bit manipulation](problems/bit-manipulation/) | Binary representation and bit operations |
+| Advanced | [Data structures](problems/data-structures/) | Linked lists and pointer-based operations |
+| Beginner | [Loops](problems/loops/) | Counting and repetition |
 
-## Learning path
+Each problem has its own folder containing a `README.md` and a `.c` solution. The README describes the task, input/output, an example, the approach, and expected complexity where relevant.
 
-The collection is intended to grow from basic to advanced topics:
+## Suggested order
 
-1. **Basics:** output, input, variables, data types, and operators.
-2. **Decisions and loops:** `if`/`else`, `switch`, and `for`/`while`/`do-while`.
-3. **Arrays and strings:** storing and processing groups of values and text.
-4. **Functions:** reusable code, parameters, return values, and recursion.
-5. **Pointers and memory:** addresses, pointer operations, and dynamic allocation.
-6. **Structures and files:** custom data types and file input/output.
-7. **Advanced practice:** algorithms, data structures, and larger exercises.
-
-Each new exercise should live in a descriptive topic folder under `problems/`. Put its problem explanation in a `README.md` beside the `.c` solution.
+1. Start with `basics/` and the existing `loops/count-1-to-n/` exercise.
+2. Practice array traversal before searching and sorting.
+3. Work through string tasks using standard C character arrays.
+4. Study recursion, then pointers and bit manipulation.
+5. Revisit each problem and implement it again without looking at the solution.
 
 ## Compile and run
 
-You need a C compiler such as GCC. From the repository root, compile an exercise with:
+Install a C compiler such as GCC. Compile one file from the repository root, for example:
 
 ```sh
-gcc -std=c11 -Wall -Wextra -pedantic problems/loops/count-1-to-n/count_1_to_n.c -o count_1_to_n
+gcc -std=c11 -Wall -Wextra -pedantic problems/arrays/second-largest/second_largest.c -o second_largest
 ```
 
-Run it on Linux/macOS with `./count_1_to_n`, or on Windows with `count_1_to_n.exe`.
+Run with `./second_largest` on Linux/macOS or `second_largest.exe` on Windows. Unless the problem README says otherwise, enter input in the order shown in its example. The solutions use standard input/output so they can also be adapted to online judges.
 
-## Contributing practice solutions
+## Existing learning notes
 
-- Keep each program focused on one problem.
-- Prefer standard C and readable names.
-- Check input before using it, and explain assumptions in the problem README.
-- Include sample input/output and a short explanation of the approach.
+The original `Functions/` folder and root `.txt` files are retained as study material. The structured interview exercises are under `problems/`.
+
+## Adding a problem
+
+Create a descriptive folder under the closest topic in `problems/`. Include a short problem README, sample input/output, a readable C solution, and input assumptions. Keep each solution standalone and compile it as C11.

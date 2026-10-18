@@ -37,4 +37,4 @@ gcc -std=c11 -Wall -Wextra -pedantic count_1_to_n.c -o count_1_to_n
 ./count_1_to_n
 ```
 
-Enter a positive integer when prompted. The program rejects non-numeric input and values less than 1.
+Enter a positive integer as standard input. The program rejects non-numeric input and values less than 1.
